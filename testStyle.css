@@ -1,0 +1,273 @@
+body{
+    background-image: url("C:/Users/紫川秀/Desktop/刘子澄部分摄影作品/天后大桥.jpg");
+    background-size: 100% auto;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-color: rgb(157, 198, 199);
+    color: black;
+}
+label{
+    font-size: 200%
+}
+p{
+    font-size: 20px ;
+    font-family: 仿宋;
+    line-height: 30px;
+}
+h1{
+    font-family:kaiTi;
+    display: inline-block;
+}
+h2{
+    /* display: inline; */
+    font-weight: bold;
+    font-family: 黑体; 
+    color: rgb(156, 105, 17);
+    transition:all 3s;
+    width: 400px;
+}
+h2:hover{
+    color: rgb(156, 7, 89);
+    cursor: pointer;
+    transform: rotate(-6deg)
+}
+.ul-title1{
+    list-style-type: none;
+    
+}
+.ul-title1 li{
+    font-size: 20px;
+    font-family: 仿宋;
+    line-height: 50px;
+}
+.ul-title3{
+    list-style-type: none;
+}
+.ul-title3 li{
+    display: inline;
+    font-size: 20px;
+    font-family: 仿宋;
+    line-height: 30px;
+}
+.partdiv{   /* 设置部分div样式使得整体布局合理 */  
+    position: relative;
+    /* overflow: auto; */
+    top: 130px; 
+}
+.div-nav{
+    text-align: center;
+    top: 100px;
+    margin: 0px;
+    width: 100%;
+    position: relative;
+}
+.div-nav ul{ 
+    list-style-type: none;
+    float: left;
+    background-color: #98dad2;
+    border: 1px solid #000;
+    padding-right: 50px;
+    font-family: 仿宋;
+}
+.div-nav ul li{
+    font-size: 28px;
+    margin:40px ;
+    display: inline;
+    line-height: 60px;
+    border-left: 1px solid #2f3b98;
+    border-right: 1px solid #2f3b98;
+}
+.div-nav ul li a{
+   text-decoration: none; /*清除超链接的下巴*/
+   color: rgba(2, 2, 2, 0.938);
+   cursor:pointer;  
+}
+
+.div-nav ul li a:hover{
+   color: #a61eb5;
+ }
+
+/* .image-row{
+       
+} */
+.image-row img{
+    margin: 10px;
+    display: inline; 
+    padding-left: 30px;
+    transition: all 0.1s linear 0.01s;
+}
+.image-row img:hover{
+    transform: scale(1.25);
+    top: -100px;
+    box-shadow: #1f1a1a;
+}
+td img{
+    transition: all 0.2s 0.05s;
+}
+td img:hover{
+    transform: scale(1.5,1.0);
+}
+fieldset input{
+    transition:all 2ms;
+}
+fieldset input:hover{
+    transform: rotate(20deg)
+}
+fieldset select{
+    transition:all 1s linear;
+}
+fieldset select:hover{
+    transform: scale(1.88)
+}
+a:link{
+    color:rgb(9, 56, 197)
+}
+a:visited{
+    color: rgb(109, 51, 162);
+}
+a:hover{
+    color:rosybrown;
+}
+a:active{
+    color: rgb(234, 20, 20);
+}
+/* 设置表单输入框的字体样式 */
+.form1-input1 {
+    font-family:仿宋;               /* 字体类型 */
+    font-size: 18px;               /* 字体大小 */
+    color: #333;                 /* 字体颜色 */
+    padding: 10px;                 /* 内边距 */
+    margin-bottom: 20px;           /* 下边距 */
+    border: 1px solid #ccc;      /* 边框 */
+    border-radius: 16px;           /* 圆角 */
+    width: calc(100% - 600px);     /* 宽度 */
+}
+.form1-input1:hover{
+    background-color: #bebdbd;
+}
+/* 设置表单按钮的字体样式 */
+.form1-button1 {
+    font-family: 华文仿宋;          /* 字体类型 */
+    font-size: 20px;               /* 字体大小 */
+    color: #fff;                 /* 字体颜色 */
+    background-color: #007bff;   /* 背景颜色 */
+    padding: 10px 20px;            /* 内边距 */
+    margin-top: 30px;              /* 上边距 */
+    margin-right: 20px;
+    border: none;                  /* 无边框 */
+    border-radius: 10px;           /* 圆角 */
+    cursor: pointer;               /* 鼠标指针样式 */
+}
+
+.form1-button1:hover {
+    background-color: #0056b3;     /* 鼠标悬停时的背景颜色 ，这里用到了伪类类比超链接的四种*/
+}
+
+marquee{
+    font-family: 幼圆;
+    font-size: 20px;
+}
+dl{
+    font-size: 20px;
+    font-family: 仿宋;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 20px;
+    background-color: #75aac4;
+}
+dt{
+    color: #133c30;
+    font-weight: bolder;
+      margin-top: 10px;
+      
+}
+dd{
+    margin: 0 0 10px 20px;
+    color: #585e10;
+    line-height: 1.5;
+
+}
+
+table{
+    font-size: 20px;
+    text-align: center;
+    font-family: 仿宋;
+    width: 100%; /* 表格宽度占满父容器 */
+    border-collapse: collapse; /* 合并边框，使表格看起来更整洁 */
+    margin: 20px; /* 底部间距 */
+}
+table td{
+    background-color: #6c908a;
+    padding: 10px; /* 单元格内边距 */
+    border: 1px solid #ddd; /* 单元格边框 */
+}
+
+table td:hover{
+    background-color: #587951;
+}
+
+.form-title4{
+    font-size: 20px;
+    font-family: 仿宋;
+    line-height: 1.5;
+}
+fieldset {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #99b6be;
+}
+fieldset:hover{
+    background-color: #75aac4;
+}
+legend{
+    font-size: 25px;
+    font-weight: bolder;
+}
+fieldset label {
+    display: inline-block;
+    font-size: 20px; /* 根据需要调整宽度 */
+    margin-bottom: 10px;
+}
+.messageBoard{
+    font-size: 25px;
+    font-weight: bolder;
+    font-family: 仿宋;
+}
+.messageBoard label{
+    font-size: 25px;
+    font-weight: bolder;
+    font-family: 仿宋;
+    line-height: 2.5;
+}
+.messageBoard textarea{
+    background-color: #d7f8e4;
+    border: 5px solid #585858;
+}
+.messageBoard input{
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: 仿宋;
+    line-height: 2;
+}
+form textarea{
+    transition:all 0.2s linear;
+    /* margin-left : 30px; */
+    margin: 30px;
+}
+form textarea:hover{
+    transform: scale(1.14,0.2)
+}
+input[type="file"]{
+    transition:all 0.4s linear;
+}
+input[type="file"]:hover{
+    transform: translate(15%,55%)
+}
+/* .specialText{
+    transition: all 0.2s;
+}
+.specialText:hover{
+    transform: rotate(480deg);
+} */

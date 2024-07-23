@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>三水气象台-随想录</title>
+    <link rel="stylesheet" href="testStyle.css">
+</head>
+
+
+
+<body>
+    <marquee behavior="alternate" scrollamount="30" bgcolor="green">欢迎光临-welcome back</marquee>
+    <h1 id="top" >→随机挑选一个幸运观众来参观一下</h1>
+    <h1 style="text-align:right;">这是一个简单而不简陋的网址←</h1>
+<div style="text-align: center;">
+    <p style="display: block;">或许这里应该放一篇大一开学时做自我介绍的草稿，<label>但找不到了...</label></p>
+    <a href="https://www.nua.edu.cn/main.htm"target="_blank" title="南京艺术学院官网" style="font-family: 仿宋;">点击这里可以去我们学校官网 </a>
+    <p> --- 用来测试一下写的超链接能不能用，并且实现跳转--- </p>   
+    <form>
+    <span style="font-family: 仿宋; font-size: 18px;">
+        用户名：<input value="小米员工10001" readonly class="form1-input1"><br>
+        手机号：<input type="text" class="form1-input1"><br>
+        账号：<input value="三水点一灯" class="form1-input1" autofocus><br>
+        密码：<input type="password" class="form1-input1"><br>
+    </span>
+        <input type="submit" value="登录" class="form1-button1" onclick="login()">
+        <a href="#新人注册"> <input type="button" value="注册" class="form1-button1"></a>
+    </form>
+    <script>
+    var userIsRegistered = false; // 假设用户未注册
+    function login() {
+    // 假设这里是判断用户是否已注册的逻辑
+        if (!userIsRegistered) {
+            alert("新用户请先注册！"); // 如果用户未注册，则弹出警告框
+            // var pwd = prompt("是否保存密码?"); // 弹出提示框，让用户选择是否保存密码
+            // console.log(pwd);
+        } else {
+        // 用户已注册的处理逻辑
+        // 可以在这里编写登录成功后的操作
+        alert("登录成功");}
+    }
+    </script>
+</div>
+       
+<div class="div-nav">
+    <nav>
+        <ul class="ul-nav">
+            <li><a href="#导航1.0">-基本个人信息-</a></li>
+            <li><a href="#导航2.0">-大学生活感受-</a></li>
+            <li><a href="#导航3.0">-南京著名景点-</a></li>
+            <li><a href="#导航4.0">-使用表格表单-</a></li>
+        </ul>
+    </nav>
+</div>
+
+<div class="partdiv">
+    <h2 id="导航1.0">(一)、基本个人信息</h2>
+    <ul class="ul-title1">
+        <li>1. 生日:2004-5-1,劳动节且不爱劳动</li>
+        <li>2. 爱好:手机or相机摄影,比较喜欢扫街,阳光好的时候漫无目的随便拍，爱听音乐</li>
+        <li>3. 院系：文化产业学院——公共事业管理</li>
+        <li>4. 哪里人：南京(上大学后悔了,应该去外地)</li>
+        <li>5.我的个人博客地址：(很基础,记录了半年多的java学习历程,最近没咋更新):</li>
+        <a href="https://blog.csdn.net/2301_77139967?spm=1011.2266.3001.5343"target="_blank"title="我的博客">csdn</a>
+        <li>6.我的qq邮箱地址:</li>
+        <a href="mailto:3106046565@qq.com">点击这里是邮箱</a>
+        <li>7.最爱的南京美食:皮肚面,有时候纯纯是一个干饭人,比较喜欢中餐,喜欢吃辣,喜欢吃辣,喜欢吃辣</li>
+    </ul>
+</div>
+
+<div class="partdiv">
+    <h2 id="导航2.0">(二)、大学生活感受</h2>
+            <p style="text-align: center;">  放几张学校的图片↓↓↓</p>
+            <div class="image-row">
+                <img src="网页图片存储/测试图片2.png" width="360" height="240" alt="录取通知书" >
+                <img src="测试图片1.jpg" width="300" height="400" alt="南艺校园风景图" >
+                <img src="网页图片存储/图片素材/测试图片3.jpg" width="400" height="270" alt="上海美专" >
+            </div>
+            <!--
+            <div class="partdiv">
+                南京艺术学院官网视图
+                <iframe src="http://www.nua.edu.cn/" width="500" height="300" title="南艺官网">
+                </iframe>
+            </div>
+            -->
+         <p>   
+            大学食堂的伙食还可以,比小学初中高中好,一共两个食堂:附中食堂和黄瓜园餐厅,黄瓜园的一楼没有二楼好吃
+            校园历史比较久,已经110多年了,人文历史气息比较厚重。
+            但有些设备设施确实落后且老化严重，最近学校图书馆在翻新。
+        </p>
+</div>
+
+<div class="partdiv">
+    <h2 id="导航3.0">（三）、南京著名景点</h2>
+    <marquee behavior="" scrollamount="20" bgcolor="red">领略大美南京风光</marquee>
+    <ul class="ul-title3">
+        <li>
+            ①南京的大学
+            <ul >
+                <a href="https://www.nju.edu.cn/" target="_blank" title="985高校:NJU"><li>南京大学</li></a>
+                <a href="https://www.seu.edu.cn/" target="_blank" ><li>东南大学</li></a>
+                <a href="https://www.nju.edu.cn/" target="_blank" ><li>南京航空航天大学</li></a>
+                <a href="https://www.njust.edu.cn/" target="_blank" ><li>南京理工大学</li><br></a>
+                <a href="https://www.nju.edu.cn/" target="_blank" ><li>南京农业大学</li><br></a>
+                <a href="https://www.nju.edu.cn/" target="_blank" ><li>南京医科大学</li><br></a>
+            </ul>
+        </li>
+        <li>
+            ②南京的寺庙
+            <ol >
+                <a href="https://www.seu.edu.cn/" target="_blank" ><li >鸡鸣寺</li><br></a>
+                <a href="https://www.seu.edu.cn/" target="_blank" ><li>栖霞寺</li><br></a>
+                <a href="https://www.seu.edu.cn/" target="_blank" ><li>大报恩寺</li><br></a>
+                <a href="https://www.seu.edu.cn/" target="_blank" ><li>毗卢寺</li><br></a>
+            </ol>
+        </li>
+    </ul>
+    
+    <dl>
+        ③南京的关键词
+        <dt>六朝古都</dt>
+        <dd>xxxxxxxx</dd>
+        <dd>xxxxxxxx</dd>
+        <dd>xxxxxxxx</dd>
+        <dt>十朝都会</dt>
+        <dd>xxxxxxxxxxxxxx</dd>
+        <dd>xxxxxxxxxxxxxx</dd>
+        <dd>xxxxxxxxxxxxxx</dd>
+        <dt>金陵</dt>
+        <dd>xxxxxxxxxxxxxxxxxxxxxxxxxx</dd>
+        <dd>xxxxxxxxxxxxxxxxxxxxxxxxxx</dd>
+        <dd>xxxxxxxxxxxxxxxxxxxxxxxxxx</dd>
+    </dl>
+    
+</div>
+
+<div class="partdiv">
+    <h2 id="导航4.0">(四)、使用表格表单</h2>
+    <table border="1" class="table-title4">
+        <caption >一些不赏心悦目的风景图处理</caption>
+        <tr> 
+            <td>原始图片</td> 
+            <td><img src="C:\Users\紫川秀\Desktop\刘子澄部分摄影作品\红火通明.jpg" width="600" height="400"></td> 
+        
+        </tr>
+        <tr> 
+            <td>风格化处理</td> 
+            <td><img src="C:\Users\紫川秀\Desktop\刘子澄部分摄影作品\红火通明.jpg" width="600" height="400" style="filter:grayscale()"></td> 
+        </tr>
+    </table>
+</div>
+
+<div class="partdiv">
+    <form id="新人注册" class="form-title4">
+        <fieldset style="display: inline;">
+            <legend>必填信息</legend>
+            新建账号：<input type="text" id="new_userName"><br>
+            新建密码：<input type="password" id="new_pwd"><br>
+            确认密码：<input type="password" id="confirmed_pwd"><br>
+            <input type="submit" value="确认注册" class="form1-button1" id="confirmedRegist">
+            <script>
+                function handleRegist(e){
+                    e.preventDefault();//防止浏览器对表单的默认提交功能
+                    console.log("用户点击确认注册");
+
+                    let userName = document.getElementById("new_userName").value;
+                    let pwd = document.getElementById("new_pwd").value;//获取用户输入的密码(value)
+                    let repwd =document.getElementById("confirmed_pwd").value;
+                    if(pwd === repwd){
+                        alert("恭喜你,注册成功!");
+                        userIsRegistered=true;
+                        console.log("用户注册的新用户名:"+userName);
+                        console.log("用户注册的新密码:"+pwd);
+                    }else{
+                        alert("两次输入的密码不一致");
+                         // 清空密码输入框
+                        document.getElementById("new_pwd").value = "";
+                        document.getElementById("confirmed_pwd").value = "";
+                    }
+                    
+                }
+                const regist_btn = document.getElementById("confirmedRegist");
+                regist_btn.addEventListener("click",handleRegist);
+            </script>
+        </fieldset>
+        
+        <fieldset style="width: 500px;">
+            <legend>选填信息</legend>
+            <label>选择生日</label>
+            <select>
+                <option>xxxx年x月x日</option>
+            </select>
+            <label>选择性别</label>
+            <select>
+                <option>男</option>
+                <option>女</option>
+                <option>不男不女</option>
+            </select>
+            <label>籍贯</label>
+            <select multiple>
+                <option selected>南京</option>
+                <option>北京</option>
+                <option>上海</option>
+                <option>苏州</option>
+            </select>
+        </fieldset>
+
+        <fieldset style="display: inline;">
+            <legend>用户隐私模块</legend>
+            ——>协议：<br>
+            <input type="radio" name="accept">接受全部协议<br>
+            <input type="radio" name="accept">不接受全部协议<br>
+            ——>条款：<br>
+            <input type="checkbox" name="require">同意部分条款1<br>
+            <input type="checkbox" name="require">同意部分条款2<br>
+            <input type="checkbox" name="require">同意部分条款3<br>
+            <input type="checkbox" name="require">同意部分条款4<br>
+            <input type="checkbox" name="require">同意部分条款5<br>
+        </fieldset> 
+    </form>
+</div>
+
+<div class="partdiv messageBoard">
+    <form>
+        <br>
+        <label>随想录&留言板 (可以选择分享一些文件)</label><br>
+        <textarea name="留言板" id="area1" cols="100" rows="20" span class="colorSquare"></textarea>
+    </form>
+
+    <form>
+        <input type="file" value="查找文件" multiple="">
+        <input type="file" value="上传图片" multiple="">
+    </form>
+</div>
+
+<div style=" position: relative; top: 120px;" class="partdiv">
+    <br>
+    <audio src="听力音乐 [mqms2].ogg" controls autoplay style="float: right;"></audio>
+    <br>
+</div>
+
+    <a href="#top" style=" position: relative; top: 200px;">^^^回到顶部^^^</a>
+    <script src="calendar.js"></script>
+    <!-- <script src="loginANDregist.js"></script> -->
+</body>
+
+</html>
