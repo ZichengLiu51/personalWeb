@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>一份简历</title>
+        <script src="eye.js" defer></script>
+        <style>
+            body{
+                font-family: 仿宋, Arial;
+                /* font-size: 20px; */
+                margin: 0px;
+                padding: 0px;
+                color: rgb(81, 81, 81);
+                background-color: #e8e8eb;
+                line-height: 45px;
+            }
+            h1{
+                color: rgb(25, 92, 207);
+                margin: 0px;
+            }
+            h3{
+                margin: 0px;
+            }
+            h4{
+                margin: 0px;
+            }
+            p{
+                margin: 0px;
+            }
+            .container{
+                display: flex;
+                flex-wrap: wrap;/* 自动换行 */
+                padding: 20px;
+                /* margin: 20px; */
+            }
+            .RightPanel{
+                /* display: inline-flex; */
+                /* justify-content: space-between; */
+                margin: 20px;
+                padding: 20px;
+                flex:1.618 1 200px; /* 容器占比分割 */
+                background-color: rgb(246, 247, 246);
+            }
+            .LeftPanel{
+                margin: 20px;
+                padding: 20px;
+                flex:1 1 200px;
+                background-color:rgb(252, 252, 251);
+            }
+            ul{
+                margin: 0px;
+            }
+            .header{
+                display: flex;
+                justify-content: space-between;
+            }
+            .name{
+                /*  display: inline-flex;
+                flex-direction: column; 这个属性指定主轴方向为垂直方向
+                align-items: center;这个属性用来在交叉轴上对齐Flex容器内的项目
+                justify-content: center;这个属性会使所有子项目在垂直方向上居中对齐 */
+                font-size: 45px;
+                position: absolute;
+                top: 30px;
+                left: 45%;
+            }
+            .img1{
+                /* display: inline-flex; */
+                width: 241px;
+                height: 74px;
+                margin: 20px;
+            }
+            .img2{
+                width: 76px;
+                height: 114px;
+                margin-right: 20px;
+            }
+            img:hover{
+                opacity: 0.6;/* 设置鼠标悬停图片后其透明度的改变 */
+            }
+            .introduction{
+                margin: 0px;
+                padding: 0px;
+                font-size: 18px;
+                font-family: Arial;
+                display: none;
+                text-align: center;
+                line-height: 28px;
+            }
+            hr{
+                border-color: #4873e0;
+            }
+            span{
+                font-weight: bolder;
+            }
+            a{
+                text-decoration: none;   /* 去除超链接下划线 */
+                color: rgb(24, 55, 228);
+            }
+            .hide{
+                display: none;
+                background-image:-webkit-linear-gradient(90deg, rgb(251, 251, 251) 0%,rgb(239, 242, 247) 100%); /* 设置渐变背景色 */
+                
+                transition: opacity 0.5s ease-in-out;
+            }
+            .imgChange{
+                rotate: -90deg;/* 逆时针旋转90度 */
+            }
+            .eye{
+                margin-right: 20px;
+                height: 24px;
+                width: 24px;
+                position: absolute;
+                left: 22%;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <img src="图片/南艺徽标.png" class="img1">
+            <h1 style="color: black;text-align: center;" class="name">刘子澄</h1>
+            <img src="图片/个人简历照.jpg" class="img2">
+        </div>
+
+        <span><img src="图片/eye-slash.svg" class="eye"></span>
+        <p class="introduction">   
+            15651987885 丨3106046565@qq.com 丨
+            江苏南京   |  20岁 丨 男 丨 共青团员
+        </p>
+       
+        <div class="container">
+            <div class="RightPanel">
+                <h1>教育经历 <span><img src="图片/图片按钮.png"  onclick="clickedPic('part0','imgBtn0')" id="imgBtn0"></span></h1>
+                <hr><!-- 分割线美化 -->
+                <div class="hide" id="part0">
+                <h4>南京艺术学院</h4>
+                        <!-- 嵌套图片按钮、原文本、背景阴影与一体 -->
+                    <p> 
+                        文化产业学院 公共事业管理 22级 本科
+                    </p>
+                </div>
+                
+
+                <h1>专业技能 <span><img src="图片/图片按钮.png"  onclick="clickedPic('part1','imgBtn1')" id="imgBtn1"></span></h1>
+                <hr>
+                <div class="hide" id="part1">
+                    <h3>主修课程：</h3>
+                        <ul>
+                            <li>市场营销、组织行为学</li>
+                            <li>文化资源学、文化学原理</li>
+                            <li>管理学原理、人力资源管理</li>    
+                            <li>经济学原理、统计学原理、财务管理</li>               
+                        </ul>
+                    <h3>课外辅修课程：</h3>
+                        <ul>
+                            <li>高等数学</li>
+                            <li>Java语言</li>
+                        </ul>
+                    <h3>编程语言：</h3>
+                        <ul>
+                            <li>熟悉Java基础语法、 面向对象编程，文件操作，常用集合类与软件设计逻辑，了解Python。</li>
+                        </ul>
+                    <h3>数据结构与算法：</h3>
+                        <ul>
+                            <li>熟悉数组、栈、链表、动态数组 </li>
+                            <li>了解排序、递归、图像相关算法</li>
+                        </ul>
+                </div>
+                        
+                <h1>项目经历<span><img src="图片/图片按钮.png" onclick="clickedPic('part2','imgBtn2')" id="imgBtn2"></span></h1>
+                <hr>
+                <div class="hide" id="part2">
+                    <h3>美颜相机软件</h3>
+                    <ul> 
+                        <li>一款集成了高级图像处理功能的美颜相机软件，可以提供多种风格滤镜进行图像处理。</li>
+                        <li>利用Swing框架设计并实现了直观、响应式的用户界面，可以轻松访问和操作美颜功能。通过ImageIO API实现图像读取和写入保存流程。</li>
+                        <li>实现了包括灰度转换、马赛克生成和负片效果在内的多种图像风格化算法，实现了一个高效的双缓冲机制，通过BufferedImage优化了图像处理的效率，显著提升了图像显示与处理的运行速度。</li>
+                        <li>通过本项目，掌握了Java Swing框架开发界面和ImageIO API的使用，增强了在图形用户界面设计和图像处理方面的专业技能。对于程序开
+                            发的逻辑有了明显的进步，对于图像处理算法也有了一定的了解。</li>
+                    </ul>
+                    <h3>五子棋对战游戏</h3>
+                    <ul> 
+                        <li>基于Java开发的五子棋对战游戏，实现了一个简洁而功能完备的五子棋游戏并集成了AI对手，增加了游戏的挑战性和互动性。</li>
+                        <li>使用Swing框架设计了直观的用户界面，实现了游戏的可视化展示与鼠标操作。完成了游戏的核心逻辑，包括棋盘初始化、玩家交替落子、
+                            胜负判断，悔棋，回放本局等功能。</li>
+                        <li>通过重写 paint 方法，和双缓冲机制，实现了棋盘的动态快速刷新和棋子的重绘。开发了基于规则的AI算法，可以使AI能够根据当前棋局状
+                            态，统计所有落子点的权值并计算并选择最优落子点。</li>
+                    </ul>  
+                    <h3>手动绘图工具</h3>
+                    <ul> 
+                        <li>开发了一个功能丰富的画图工具，该工具利用面向对象的原则，可以通过该工具进行自由创作。</li>
+                        <li>实现了基本的绘图功能，包括直线、圆形、矩形、三角形、多边形等图形的绘制与记录。
+                            利用迭代与递归的思想实现了谢尔宾斯基地毯、仿真树、模拟K线图等创意分形。
+                            通过事件监听器实现了对用户输入的响应，包括鼠标事件和按钮事件。实现了颜色选择与图形选择。
+                            基本面向对象思想实现了图形数据的保存与重绘，并将数据存入动态数组中以保证图形在刷新时不会消失。</li>
+                        <li>通过此项目掌握了面向对象编程思想与集合框架的应用、了解图形开发中的复杂逻辑。</li>
+                    </ul>      
+                </div>
+                    
+            </div>
+
+            <div class="LeftPanel">
+                <h1>社会实践 <span><img src="图片/图片按钮.png" onclick="clickedPic('part3','imgBtn3')" id="imgBtn3"></span></h1>
+                <hr>
+                <div class="hide" id="part3">
+                    <p> <span>南京艺术学院 招生工作处 学生助理</span></p>
+                        <p>2023年09月 - 至今</p>
+                        <p>负责接待专家 接听来访电话 制作招生宣传ppt 撰写各类活动策划方案</p>
+                </div>
+                    
+                <h1>其他<span><img src="图片/图片按钮.png" onclick="clickedPic('part4','imgBtn4')" id="imgBtn4"></span></h1>
+                <hr>
+                <div class="hide" id="part4">
+                <ul> 
+                    <li><span>技能：</span> Office，PowerPoint，Excel，Word，办公软件</li>
+                    <li><span>证书/执照：</span> 蓝桥杯省三、院学生会优秀干事</li>
+                    <li><span>语言：</span> 英语（CET-4），IELTS 6.0，普通话二级乙等</li>
+                    <li><span>兴趣爱好：</span>音乐，摄影</li>
+                    <li><span>个人博客地址:</span><a href="https://blog.csdn.net/2301_77139967?type=blog" target="_blank">- CSDN -</a></li>   
+                </ul>
+                </div>
+                <h1>自我评价<span><img src="图片/图片按钮.png" onclick="clickedPic('part5','imgBtn5')" id="imgBtn5"></span></h1>
+                <hr>
+                <div class="hide" id="part5">
+                    <p>本人是一名公共事业管理专业的本科生，掌握丰富的管理理论知识，了解财务的相关知识。熟悉Java语言，具备良好的编程基础。关注前沿科技
+                    与当下艺术。本人对事物具有独到的见解和经验，个性开朗，容易相处，团队荣誉感强。</p>
+                </div>
+                
+            </div>
+        </div>
+           
+    </body>
+    
+
+<script>
+
+    // 初始版：
+    // function clickedPic(partId) {
+    //     console.log("点击了图片"+partId);
+    //         let hiddenDiv = document.getElementById(partId);
+    //         if (hiddenDiv) {  // 检查是否找到了元素
+    //             hiddenDiv.style.display = "block";
+    //         }else{
+    //             hiddenDiv.style.display = "none";
+    //         }
+    // }
+
+    // 进阶版：
+    let showflag = true; //设置标识控制内容展示与隐藏的交替 
+    function clickedPic(partId,imgId) { //传入参数(隐藏内容部分和图片按钮)id,与onclick方法绑定且呼应
+        console.log("点击了图片"+partId+imgId);
+            let hiddenDiv = document.getElementById(partId); 
+            //利用dom获取元素id,在JS中,获取到的元素对象如果存在,会被视为true,如果为null,则被视为false
+            let imgBtn = document.getElementById(imgId);
+            if (hiddenDiv && showflag) {  // 检查是否找到了元素
+                hiddenDiv.style.display = "block"; //需要隐藏的div部分有class:hide,还有id:partId,id传给了hiddenDiv,其实可以省略hiddenDiv
+                //思考1:发挥作用的过程？
+                //get ele by id:获取元素通过id,得到的是div元素
+                //然后通过内联样式重新设置style.display设置具体的属性值控制元素的显示与隐藏
+                //类比style="display:block;"
+                imgBtn.classList.add("imgChange");
+                //思考2:发挥作用的过程？
+                //通过imgId获取到img元素,然后通过classList可以获取元素的全部类名,通过add方法添加一个或多个类名
+                showflag = false;
+            }else{
+                hiddenDiv.style.display = "none";
+                imgBtn.classList.remove("imgChange");
+                showflag = true;
+            }
+    }
+
+    var user = {
+        name : "刘子澄",
+        gender :"男",
+        age : 20,
+        hobby : ["音乐","摄影","citywalk","书法","美食"],
+        address : {
+            email : "3106046565qq.com",
+            phone : "15651987885",
+            city : "南京市"
+        },
+        university:"南京艺术学院",
+        introduction:function(){
+            console.log("自我介绍：大家好我是来自"+this.university+"的"+this.name);
+        }
+    }
+    delete user.gender;
+    console.log(JSON.stringify(user));
+    user.introduction();
+
+    var user1 ={};
+    Object.assign(user1, user);//浅拷贝，重要
+    user1.address.city = "苏州市";//可以修改的数据
+    console.log(JSON.stringify(user));
+
+    var user2 = Object.assign({},user);//浅拷贝
+    console.log(JSON.stringify(user2));//南京变苏州
+
+    // 正则表达式的应用
+    let hidePhoneNum = user.address.phone.replace(/^(\d{3})\d{4}(\d{4})$/, '$1****$2');//隐藏手机号码后四位
+    console.log(hidePhoneNum);
+
+    // let checkEmail = /^(\w)+(\.\w+)*@(\w)+((\.\w{2,3}){1,3})$/.test(user.address.email);//检查邮箱格式
+    // if(checkEmail){
+    //     console.log("邮箱格式正确");
+    // }else{
+    //     console.warn("邮箱格式错误");
+    // }
+
+   
+</script>
+</html>
+
